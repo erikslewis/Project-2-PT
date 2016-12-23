@@ -1,10 +1,146 @@
-<%= link_to "Create New Post", new_post_path %>
-<section>
-  <% @posts.each do |post| %>
-    <article>
-      <h2><%= link_to post.title, post_path(post) %></h2>
-      <time>Updated <%= post.updated_at %></time>
-      <p><%= post.body %></p>
-    </article>
-  <% end %>
-</section>
+
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Shawndell</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ </head>
+ <body>
+
+   <div id="hide">
+
+   <h2> SHAWNDELL'S PRO FITNESS TRAINING PROGRAMS
+
+   </h2>
+   </div>
+
+<div id="convert">
+<FORM name=form1 method="post">
+
+  <p>PERCENTAGE CALCULATOR</p>
+    % <INPUT placeholder="PERCENT" name=a> Of Your <INPUT placeholder="MAX LBS" name=b>
+  Answer = <INPUT id="awnser" placeholder="YOU LIFT"  name=total1>
+  <INPUT id="cal"onclick=perc1() type=button value=ENTER>
+  <INPUT id="set" type=reset value=RESET ></FORM>
+</div>
+<h2>  <%= link_to "Submit Your Results", new_post_path %> </h2>
+ <div class="controls">
+   <p id="timer">0</p>
+   <h4> STOP WATCH CONTROLS</h4>
+   <button id="reset">RESET</button>
+   <button id="start">START</button>
+   <button id="pause">STOP</button>
+ </div>
+   <div id="bar">
+<h2>  TRAINING EXERCISES</h2>
+   <h3>
+   <button id="button1">Leg Workouts</button>
+   <button id="button2">Chest Workouts</button>
+   <button id="button3">Ab Workouts</button>
+   <button id="button4">Tricep Workouts</button>
+   <button id="button5">Bicep Workouts</button>
+   <button id="button6">Back Workouts</button>
+   <button id="button7"> Shoulder Workouts</button>
+   </h3>
+   </div>
+   <div id="show1" class="hidden newbuttons">
+
+
+    Leg Exercise One: SQUATS! <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1726066427677582%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    Leg Exercise Two: LUNGES!
+
+    Leg Exercise Three: LEG PRESS!
+
+    Leg Exercise Four: FRONT SQUATS!
+
+    Leg Exercise Five: LEG EXSTENSIONS!
+
+   </div>
+   <div id="show2" class="hidden newbuttons">
+    Chest Exercise One: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1830347050582852%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+
+    Chest Exercise Two: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1832668873684003%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+
+    Chest Exercise Three:<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1757580807859477%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    Chest Exercise Four:
+
+    Chest Exercise Five:
+
+   </div>
+   <div id="show3" class="hidden newbuttons">
+    Abdominal Exercise One:
+
+    Abdominal Exercise Two:
+
+    Abdominal Exercise Three:
+
+    Abdominal Exercise Four:
+
+    Abdominal Exercise Five:
+
+   </div>
+   <div id="show4" class="hidden newbuttons">
+    Triceps Exercise One: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1780321878918703%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+
+
+    Triceps Exercise Two:
+
+    Triceps Exercise Three:
+
+    Triceps Exercise Four:
+
+    Triceps Exercise Five:
+
+  </div>
+  <div id="show5" class="hidden newbuttons">
+    Biceps Exercise One:
+
+    Biceps Exercise Two:
+
+    Biceps Exercise Three:
+
+    Biceps Exercise Four:
+
+    Biceps Exercise Five:
+
+  </div>
+  <div id="show6" class="hidden newbuttons">
+    Back Exercise One: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1819316608352563%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    Back Exercise Two: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1750750821875809%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    Back Exercise Three: <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLondellShawndell00%2Fvideos%2F1724938061123752%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    Back Exercise Four:
+
+    Back Exercise Five:
+
+  </div>
+  <div id="show7" class="hidden newbuttons">
+    Shoulder Exercise One:
+
+    Shoulder Exercise Two:
+
+    Shoulder Exercise Three:
+
+    Shoulder Exercise Four:
+
+    Shoulder Exercise Five:
+
+   </div>
+
+
+
+   <footer>Professional Personal Training</footer>
+
+ </body>
+</html>
+
+
+
+      <header> Shawndell's Pro Fitness Training </header>

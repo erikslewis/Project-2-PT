@@ -1,0 +1,524 @@
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+font-family: "Helvetica Neue", sans-serif;
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 13px;
+line-height: 17px;
+margin: auto;
+background-image: url('images/FullSizeRender.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
+justify-content: center;
+background-size: contain;
+background-color: black;
+
+}
+
+h6{
+  color: red;
+  font-size: 14px;
+
+}
+
+
+time{
+  font-size:.8em;
+  font-style:italic;
+  color: #666;
+}
+
+
+label,
+input[type="text"],
+textarea{
+  width:100%;
+  font:inherit;
+  display:block;
+}
+
+.comments{
+  margin-left:2em;
+  padding:2em 0;
+}
+
+.comments > div{
+  background: #eee;
+  padding:1em;
+  margin-top:1em;
+}
+
+div.gif{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  border-bottom: 20%;
+
+}
+
+a{
+  color: silver;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: auto;
+  font-size: 22px;
+}
+
+a:hover{
+  background-color: yellow;
+  height: 25px;
+  border-radius: 15px;
+  font-size: 23px;
+  color: black;
+  animation: pulse .8s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+#anwser{
+  color:red;
+  background-color: red;
+
+}
+#cal:hover{
+  background-color: rgb(0, 176, 41);
+font-size: 30px;
+animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+#set:hover{
+  background-color: rgb(0, 176, 41);
+font-size: 30px;
+animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+
+#matrix{
+  display: block;
+  text-align: center;
+
+}
+
+header{
+  background-color: black;
+  color: red;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+img#selector {
+      width:100%;
+      height:100%;
+
+  }
+
+h3{
+  text-align: center;
+  color: black;
+  min-width: 375px;
+  background-color: black;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgb(0, 176, 41);
+  animation: pulse 9s infinite;
+  -webkit-text-stroke: 2px yellow;
+  text-align: center;
+}
+input.btn.btn-large.btn-primary.ajax-convert-trigger.trigger:hover{
+  width: 260px;
+  color: black;
+  animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+  text-align: center;
+  background-color: blue;
+  border-radius: 15px;
+  height:60px;
+  font-size: 30px;
+  display: inline-block;
+
+}
+
+input{
+  color: black;
+  width: 135px;
+  height: 40px;
+  border-radius: 18px;
+  background-color: silver;
+  font-size: 22px;
+  text-align: center;
+
+}
+
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+  color: silver;
+  font-weight: bolder;
+  text-outline: 2px red;
+  min-width: 375px;
+  background-color: black;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgb(0, 176, 41);
+
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: blue;
+}
+#button1:hover{
+    background-color: rgb(0, 176, 41);
+  font-size: 30px;
+    animation: pulse .5s infinite;
+    -webkit-text-stroke: 2px yellow;
+
+}
+button{
+  font-size: 22px;
+  background-color: rgb(0, 176, 41);
+  color: inherit;
+  width: 200px;
+  border-radius: 15px;
+  animation: pulse 10s infinite;
+  -webkit-text-stroke: 2px silver;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 50%;
+
+}
+#button2:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .4s infinite;
+    -webkit-text-stroke: 2px yellow;
+}
+#button3:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+#button4:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+}
+#button5:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .4s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+#button6:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .5s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+#button7:hover{
+    background-color: rgb(0, 176, 41);
+font-size: 30px;
+  animation: pulse .5s infinite;
+
+    -webkit-text-stroke: 2px yellow;
+}
+
+img{
+  height: 440px;
+  width: 440px;
+}
+.newbuttons{
+    display: none;
+}
+
+#show1.hidden.newbuttons{
+    display: inline-block;;
+
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: silver;
+    border-radius: 15px;
+    font-size: 33px;
+    display: block;
+    margin: auto;
+    width: 550px;
+    height: 35px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 10s infinite alternate;
+
+
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+    50%  {background-color:black; left:200px; top:25px;}
+    75%  {background-color:rgb(0, 176, 41); left:200px; top:25px;}
+    100% {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+    50%  {background-color:black; left:200px; top:25px;}
+    75%  {background-color:black; left:-200px; top:25px;}
+    100% {background-color:rgb(0, 176, 41); left:-200px; top:0px;}
+}
+
+div.controls{
+  text-align: center;
+  font-size: 30px;
+  color: silver
+  min-width: 375px;
+  background-color: rgb(0, 176, 41);
+  padding: 5px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color:rgb(0, 176, 41);
+  animation: pulse 15s infinite;
+  -webkit-text-stroke: 2px yellow;
+  text-align: center;
+
+}
+h4{
+  background-color: rgb(0, 176, 41);
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 490px;
+  position: relative;
+  display: inline-block;
+
+}
+
+#timer{
+text-align: center;
+position: relative;
+font-size: 37px;
+color: black;
+text-decoration: underline;
+background-color: rgb(0, 176, 41);
+border-radius: 15px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 350px;
+height: 40px;
+display: inline-block;
+justify-content: center;
+
+}
+
+#reset:hover{
+  background-color: silver;
+  font-size: 30px;
+    animation: pulse .5s infinite;
+    -webkit-text-stroke: 2px yellow;
+    padding-top: 6px;
+
+}
+
+#pause:hover{
+  background-color: red;
+  font-size: 30px;
+  animation: pulse .5s infinite;
+  -webkit-text-stroke: 2px yellow;
+}
+
+#start:hover{
+  background-color: green;
+  font-size: 30px;
+  animation: pulse .5s infinite;
+  -webkit-text-stroke: 2px yellow;
+
+}
+h5{
+background-image: url(https://pbs.twimg.com/profile_images/755013009005768704/XsPcv__-.jpg);
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 10% 38%;
+font-size: 30px;
+height: 175px;
+
+}
+
+div#hide{
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 4px 4px 3px rgba(255, 255, 255, .3);
+    background-color: black;
+  }
+  25% {
+    text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+    background-color: black;
+  }
+  50% {
+    text-shadow: 4px 4px 3px rgba(55, 55, 55, .3);
+    background-color: black;
+  }
+  75% {
+    text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+    background-color: black;
+  }
+
+}*/
+@-webkit-keyframes myfirst {
+ 0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+ 25%  {background-color:black; left:200px; top:0px;}
+ 50%  {background-color:rgb(0, 176, 41); left:200px; top:20px;}
+ 75%  {background-color:rgb(0, 176, 41); left:0px; top:20px;}
+ 100% {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+ 0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+ 25%  {background-color:black; left:200px; top:0px;}
+ 50%  {background-color:rgb(0, 176, 41); left:200px; top:20px;}
+ 75%  {background-color:rgb(0, 176, 41); left:0px; top:20px;}
+ 100% {background-color:black; left:0px; top:20px;}
+}
+button.btn.ajax-radio:hover{
+  background-color: black;
+  font-size: 30px;
+  animation: pulse .5s infinite;
+  -webkit-text-stroke: 2px yellow;
+  text-align: center;
+
+
+
+}
+div.btn-group.group-select{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  min-width: 375px;
+  background-color: black;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: blue;
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: blue;
+  animation: pulse 10s infinite;
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+}
+form{
+  text-align: center;
+  font-size: 18px;
+
+}
+
+input.btn.btn-large.btn-primary.ajax-convert-trigger.trigger{
+height: 50px;
+border-radius: 15px;
+text-align: center;
+font-size: 22px;
+background-color: blue;
+color: yellow;
+width: 200px;
+border-radius: 15px;
+animation: pulse 10s infinite;
+-webkit-text-stroke: 2px silver;
+box-sizing: border-box;
+padding: 10px;
+width: 50%;
+color: yellow;
+
+
+}
+input.ajax-source.source{
+  font-size: 20px;
+  text-align: center;
+  width: 140px;
+
+}
+input.ajax-target.target{
+  font-size: 20px;
+  text-align: center;
+  width:140px;
+}
+
+#convert{
+border: 18px inset;
+border-radius: 100px;
+border-top-color: rgb(0, 176, 41);
+border-left-color: silver;
+border-right-color: rgba(225, 225, 225, .5);
+border-bottom-color: rgb(0, 176, 41);
+animation: pulse 15s infinite;
+-webkit-text-stroke: 2px rgb(0, 176, 41);
+text-align: center;
+font-size: 22px;
+background-color: black;
+
+}

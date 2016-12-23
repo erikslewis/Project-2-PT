@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
+<header> Shawndell's Pro Fitness Training</header>
+<h5></h5>
 <head>
-  <title>Scribble</title>
+  <title>Training</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="application.css" />
 </head>
+
+
+
+
 <body>
+<h2>
+  <% if current_user %> 
+  <%= link_to "Log Out #{current_user.email}", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Join Now", new_user_registration_path %>
+
+  <%= link_to "Log In", new_user_session_path %>
+<% end %>
+</h2>
+
   <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-<h1 class='logo'><%= link_to "Scribble", root_path %></h1>
+  <p class="alert"><%= alert %></p>
+
+
 
 <%= yield %>
+
 
 </body>
 </html>
