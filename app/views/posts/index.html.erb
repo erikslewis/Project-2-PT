@@ -6,13 +6,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </head>
  <body>
+  <h2>
+   <div id="myDIV" class="header">
+    My To Do List
+   <input type="text" id="myInput" placeholder="Title...">
+   <span onclick="newElement()"class="addBtn"></span>
+   <button id="buttonadd">ADD</button>
+
+ <ul id="myUL">
+   <li>Hit the gym</li>
+   <li class="checked">80 Percent training</li>
+   <li>High Protien Diet</li>
+   <li>Drink a Gallon of water</li>
+   <li>20 minutes of cardio</li>
+   <li>One Rep max lifts</li>
+ </ul>
+</div>
+</h2>
+
+   <div id="bar">
+
+<div class="dropdown">
+  <button class="dropbtn">TRAINING EXERCISES</button>
+  <div class="dropdown-content">
+   <button id="button1">Leg Workouts</button>
+   <button id="button2">Chest Workouts</button>
+   <button id="button3">Ab Workouts</button>
+   <button id="button4">Tricep Workouts</button>
+   <button id="button5">Bicep Workouts</button>
+   <button id="button6">Back Workouts</button>
+   <button id="button7"> Shoulder Workouts</button>
+   </div>
+   </h3>
+   </div>
+   </div>
 
    <div id="hide">
 
-   <h2> SHAWNDELL'S PRO FITNESS TRAINING PROGRAMS
-
-   </h2>
-   </div>
 
 <div id="convert">
 <FORM name=form1 method="post">
@@ -23,7 +53,7 @@
   <INPUT id="cal"onclick=perc1() type=button value=ENTER>
   <INPUT id="set" type=reset value=RESET ></FORM>
 </div>
-<h2>  <%= link_to "Submit Your Results", new_post_path %> </h2>
+
  <div class="controls">
    <p id="timer">0</p>
    <h4> STOP WATCH CONTROLS</h4>
@@ -31,18 +61,13 @@
    <button id="start">START</button>
    <button id="pause">STOP</button>
  </div>
-   <div id="bar">
-<h2>  TRAINING EXERCISES</h2>
-   <h3>
-   <button id="button1">Leg Workouts</button>
-   <button id="button2">Chest Workouts</button>
-   <button id="button3">Ab Workouts</button>
-   <button id="button4">Tricep Workouts</button>
-   <button id="button5">Bicep Workouts</button>
-   <button id="button6">Back Workouts</button>
-   <button id="button7"> Shoulder Workouts</button>
-   </h3>
-   </div>
+
+</div>
+<h2>
+  <%= link_to "SHAWNDELL'S TRAINING PROGRAMS", new_post_path %>
+
+</h2>
+</div>
    <div id="show1" class="hidden newbuttons">
 
 

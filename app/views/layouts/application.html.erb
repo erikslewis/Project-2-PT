@@ -15,23 +15,21 @@
 
 
 <body>
-<h2>
-  <% if current_user %> 
-  <%= link_to "Log Out #{current_user.email}", destroy_user_session_path, method: :delete %>
-<% else %>
-  <%= link_to "Join Now", new_user_registration_path %>
+  <h2>
 
-  <%= link_to "Log In", new_user_session_path %>
-<% end %>
-</h2>
+    <% if current_user %>
+      <%= link_to "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Join Now", new_user_registration_path %>
+      <%= link_to "Sign In", new_user_session_path %>
+    <% end %>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
+  </h2>
 
 
 
 <%= yield %>
-
 
 </body>
 </html>

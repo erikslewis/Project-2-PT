@@ -1,9 +1,18 @@
 
 
+<h2>
+  <% if user_signed_in? %>
 
-<h2 Log In>
+  <%= link_to('Edit registration', edit_user_registration_path) %>
 
+<% else %>
 
+  <%= link_to('Register', new_user_registration_path)  %>
+
+<% end %>
+</h2>
+
+<h2>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -27,7 +36,9 @@
   </div>
 <% end %>
 
-</h2>
+<%= render "devise/shared/links" %>
+
+
 
 
 <div id="matrix">
@@ -35,7 +46,7 @@
 
 
     <img src="https://media.giphy.com/media/A06UFEx8jxEwU/giphy.gif" alt="HTML5 Icon" style= "width:328px;height:328px;" id='selector'/>
-
+</h2>
 
 </div>
 </div>

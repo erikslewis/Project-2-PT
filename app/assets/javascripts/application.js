@@ -1,36 +1,21 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+  function perc1() {
+  a = document.form1.a.value/100;
+  b = a*document.form1.b.value;
+  document.form1.total1.value = b
+  }
+
+  function perc2() {
+   a = document.form1.c.value;
+   b = document.form1.d.value;
+   c = a/b;
+  d = c*100;
+  document.form1.total2.value = d
+                           };
 
 
-function perc1() {
-a = document.form1.a.value/100;
-b = a*document.form1.b.value;
-document.form1.total1.value = b
-}
 
-function perc2() {
- a = document.form1.c.value;
- b = document.form1.d.value;
- c = a/b;
-d = c*100;
-document.form1.total2.value = d
-                         };
-
-$( document ).ready(function(){
+$(document).ready(function() {
 
 var timer = {
   seconds: 0,
@@ -69,7 +54,7 @@ var timer = {
       console.log('reset ' + this.seconds);
       clearInterval(this.timerId);
       this.run = false;
-      this.clock.timer.text('STOP WATCH');
+      this.clock.timer.text("Go Again");
     }.bind(this));
   }
 }
@@ -123,4 +108,59 @@ $(function(){
 
                         });
                       });
-                    });
+                      // Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+     });

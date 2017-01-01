@@ -19,12 +19,49 @@ background-color: black;
 
 }
 
+#user_email{
+  background-color: black;
+  color: silver;
+  border-width: thick;
+  border-color: green;
+  border-style: double;
+  width: 200px;
+}
+
+#user_password{
+  background-color: black;
+  color: silver;
+  border-width: thick;
+  border-color: green;
+  border-style: double;
+  width: 200px;
+}
+
+#user_password_confirmation{
+  background-color: black;
+  color: silver;
+  border-width: thick;
+  border-color: green;
+  border-style: double;
+  width: 200px;
+}
+
+
+#show1{
+  text-align: center;
+  margin: auto;
+  position: relative;
+justify-content: center;
+  display: block;
+  padding-left: 28%;
+
+}
+
 h6{
   color: red;
   font-size: 14px;
 
 }
-
 
 time{
   font-size:.8em;
@@ -66,35 +103,33 @@ a{
   display: block;
   position: relative;
   margin: auto;
-  font-size: 22px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: underline;
 }
 
 a:hover{
   background-color: yellow;
   height: 25px;
   border-radius: 15px;
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   animation: pulse .8s infinite;
   -webkit-text-stroke: 2px yellow;
-
 }
-#anwser{
-  color:red;
-  background-color: red;
 
-}
 #cal:hover{
   background-color: rgb(0, 176, 41);
 font-size: 30px;
-animation: pulse .4s infinite;
+animation: pulse .3s infinite;
   -webkit-text-stroke: 2px yellow;
 
 }
 #set:hover{
   background-color: rgb(0, 176, 41);
 font-size: 30px;
-animation: pulse .4s infinite;
+animation: pulse .3s infinite;
   -webkit-text-stroke: 2px yellow;
 
 }
@@ -116,8 +151,7 @@ header{
 img#selector {
       width:100%;
       height:100%;
-
-  }
+    }
 
 h3{
   text-align: center;
@@ -137,19 +171,7 @@ h3{
   -webkit-text-stroke: 2px yellow;
   text-align: center;
 }
-input.btn.btn-large.btn-primary.ajax-convert-trigger.trigger:hover{
-  width: 260px;
-  color: black;
-  animation: pulse .4s infinite;
-  -webkit-text-stroke: 2px yellow;
-  text-align: center;
-  background-color: blue;
-  border-radius: 15px;
-  height:60px;
-  font-size: 30px;
-  display: inline-block;
 
-}
 
 input{
   color: black;
@@ -169,9 +191,8 @@ h2{
   color: silver;
   font-weight: bolder;
   text-outline: 2px red;
-  min-width: 375px;
   background-color: black;
-  padding: 10px;
+  padding: 12px;
   margin: 40px;
   box-sizing: border-box;
   border: 15px inset;
@@ -206,6 +227,7 @@ button{
   box-sizing: border-box;
   padding: 10px;
   width: 50%;
+  cursor: crosshair;
 
 }
 #button2:hover{
@@ -346,7 +368,7 @@ h4{
   border-radius: 15px;
   text-decoration: underline;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 5px;
   width: 490px;
   position: relative;
   display: inline-block;
@@ -356,7 +378,7 @@ h4{
 #timer{
 text-align: center;
 position: relative;
-font-size: 37px;
+font-size: 33px;
 color: black;
 text-decoration: underline;
 background-color: rgb(0, 176, 41);
@@ -443,69 +465,12 @@ div#hide{
  75%  {background-color:rgb(0, 176, 41); left:0px; top:20px;}
  100% {background-color:black; left:0px; top:20px;}
 }
-button.btn.ajax-radio:hover{
-  background-color: black;
-  font-size: 30px;
-  animation: pulse .5s infinite;
-  -webkit-text-stroke: 2px yellow;
-  text-align: center;
 
 
-
-}
-div.btn-group.group-select{
-  text-align: center;
-  font-size: 30px;
-  color: black;
-  min-width: 375px;
-  background-color: black;
-  padding: 10px;
-  margin: 40px;
-  box-sizing: border-box;
-  border: 15px inset;
-  border-radius: 100px;
-  border-top-color: blue;
-  border-left-color: silver;
-  border-right-color: rgba(225, 225, 225, .5);
-  border-bottom-color: blue;
-  animation: pulse 10s infinite;
-  -webkit-text-stroke: 2px black;
-  text-align: center;
-}
 form{
   text-align: center;
   font-size: 18px;
 
-}
-
-input.btn.btn-large.btn-primary.ajax-convert-trigger.trigger{
-height: 50px;
-border-radius: 15px;
-text-align: center;
-font-size: 22px;
-background-color: blue;
-color: yellow;
-width: 200px;
-border-radius: 15px;
-animation: pulse 10s infinite;
--webkit-text-stroke: 2px silver;
-box-sizing: border-box;
-padding: 10px;
-width: 50%;
-color: yellow;
-
-
-}
-input.ajax-source.source{
-  font-size: 20px;
-  text-align: center;
-  width: 140px;
-
-}
-input.ajax-target.target{
-  font-size: 20px;
-  text-align: center;
-  width:140px;
 }
 
 #convert{
@@ -521,4 +486,174 @@ text-align: center;
 font-size: 22px;
 background-color: black;
 
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background-color: #4CAF50;
+    border: 19px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 300px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration:none;
+    overflow: hidden;
+    cursor: crosshair;
+    margin-bottom: 33px;
+    box-sizing:content-box;
+    border-color: silver;
+    border-style: groove;
+
+}
+
+.dropbtn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.dropbtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.dropdown-content {
+    display: none;
+
+    margin: auto;
+    justify-content: center;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: silver;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+
+.dropdown:hover .dropdown-content {
+  margin: auto;
+    display: block;
+    position: relative;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+    text-align: center;
+    width: 33.3%;
+    padding: 14px;
+    padding-left: 68px;
+    margin: auto auto;
+    display:table-cell;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+li{
+  color: red;
+  font-size: 15px;
+  background-color: silver;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: black;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
 }
