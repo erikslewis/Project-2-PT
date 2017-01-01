@@ -274,6 +274,9 @@ font-size: 30px;
 img{
   height: 440px;
   width: 440px;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 .newbuttons{
     display: none;
