@@ -1,3 +1,8 @@
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+
 function perc1() {
 a = document.form1.a.value/100;
 b = a*document.form1.b.value;
@@ -11,7 +16,7 @@ function perc2() {
 d = c*100;
 document.form1.total2.value = d
                          };
-                         
+
 $(document).ready(function() {
 
 var timer = {

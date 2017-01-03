@@ -58,8 +58,21 @@ justify-content: center;
 }
 
 h6{
-  color: red;
   font-size: 14px;
+  text-align: center;
+  color: silver;
+  font-weight: bolder;
+  text-outline: 2px red;
+  background-color: black;
+  padding: 12px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgb(0, 176, 41);
 
 }
 

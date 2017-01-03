@@ -19,7 +19,7 @@
   <h2>
 
     <% if current_user %>
-      <%= link_to "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete %>
+      <%= link_to( "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete) %>
     <% else %>
       <%= link_to "Join Now", new_user_registration_path %>
       <%= link_to "Sign In", new_user_session_path %>
