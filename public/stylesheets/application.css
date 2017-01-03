@@ -19,6 +19,12 @@ background-color: black;
 
 }
 
+#myInput{
+  width: 450px;
+  text-align: center;
+  display: inline-block;
+}
+
 #user_email{
   background-color: black;
   color: silver;
@@ -54,6 +60,120 @@ background-color: black;
 justify-content: center;
   display: block;
   padding-left: 28%;
+
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: silver;
+    border-radius: 15px;
+    font-size: 33px;
+    display: block;
+    margin: auto;
+    width: 550px;
+    height: 35px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 10s infinite alternate;
+
+
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+    50%  {background-color:black; left:200px; top:25px;}
+    75%  {background-color:rgb(0, 176, 41); left:200px; top:25px;}
+    100% {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+    50%  {background-color:black; left:200px; top:25px;}
+    75%  {background-color:black; left:-200px; top:25px;}
+    100% {background-color:rgb(0, 176, 41); left:-200px; top:0px;}
+}
+
+
+h2{
+  text-align: center;
+
+  color: silver;
+  font-weight: bolder;
+  text-outline: 2px red;
+  background-color: black;
+  padding: 12px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgb(0, 176, 41);
+
+}
+
+h3{
+  text-align: center;
+  color: black;
+  min-width: 375px;
+  background-color: black;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: silver;
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgb(0, 176, 41);
+  animation: pulse 9s infinite;
+  -webkit-text-stroke: 2px yellow;
+  text-align: center;
+}
+
+h4{
+  background-color: rgb(0, 176, 41);
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  width: 490px;
+  position: relative;
+  display: inline-block;
+
+}
+h5{
+background-image: url(https://pbs.twimg.com/profile_images/755013009005768704/XsPcv__-.jpg);
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 10% 38%;
+font-size: 30px;
+height: 175px;
 
 }
 
@@ -150,8 +270,6 @@ animation: pulse .3s infinite;
 #matrix{
   display: inline-flex;
   text-align: center;
-
-
 }
 
 header{
@@ -167,26 +285,6 @@ img#selector {
       height:100%;
     }
 
-h3{
-  text-align: center;
-  color: black;
-  min-width: 375px;
-  background-color: black;
-  padding: 10px;
-  margin: 40px;
-  box-sizing: border-box;
-  border: 15px inset;
-  border-radius: 100px;
-  border-top-color: rgb(0, 176, 41);
-  border-left-color: silver;
-  border-right-color: rgba(225, 225, 225, .5);
-  border-bottom-color: rgb(0, 176, 41);
-  animation: pulse 9s infinite;
-  -webkit-text-stroke: 2px yellow;
-  text-align: center;
-}
-
-
 input{
   color: black;
   width: 135px;
@@ -195,26 +293,6 @@ input{
   background-color: silver;
   font-size: 22px;
   text-align: center;
-
-}
-
-
-h2{
-  text-align: center;
-  text-decoration: underline;
-  color: silver;
-  font-weight: bolder;
-  text-outline: 2px red;
-  background-color: black;
-  padding: 12px;
-  margin: 40px;
-  box-sizing: border-box;
-  border: 15px inset;
-  border-radius: 100px;
-  border-top-color: rgb(0, 176, 41);
-  border-left-color: silver;
-  border-right-color: rgba(225, 225, 225, .5);
-  border-bottom-color: rgb(0, 176, 41);
 
 }
 
@@ -306,58 +384,6 @@ img{
 
 }
 
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    color: silver;
-    border-radius: 15px;
-    font-size: 33px;
-    display: block;
-    margin: auto;
-    width: 550px;
-    height: 35px;
-    background-color: black;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
-    animation: myfirst 5s linear 10s infinite alternate;
-
-
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 7s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    /* Standard syntax */
-    animation-name: example;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
-    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
-    50%  {background-color:black; left:200px; top:25px;}
-    75%  {background-color:rgb(0, 176, 41); left:200px; top:25px;}
-    100% {background-color:rgb(0, 176, 41); left:200px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
-    25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
-    50%  {background-color:black; left:200px; top:25px;}
-    75%  {background-color:black; left:-200px; top:25px;}
-    100% {background-color:rgb(0, 176, 41); left:-200px; top:0px;}
-}
-
 div.controls{
   text-align: center;
   font-size: 30px;
@@ -378,19 +404,7 @@ div.controls{
   text-align: center;
 
 }
-h4{
-  background-color: rgb(0, 176, 41);
-  text-align: center;
-  color: black;
-  border-radius: 15px;
-  text-decoration: underline;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  width: 490px;
-  position: relative;
-  display: inline-block;
 
-}
 
 #timer{
 text-align: center;
@@ -430,16 +444,6 @@ justify-content: center;
   font-size: 30px;
   animation: pulse .5s infinite;
   -webkit-text-stroke: 2px yellow;
-
-}
-h5{
-background-image: url(https://pbs.twimg.com/profile_images/755013009005768704/XsPcv__-.jpg);
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 10% 38%;
-font-size: 30px;
-height: 175px;
 
 }
 
@@ -483,11 +487,9 @@ div#hide{
  100% {background-color:black; left:0px; top:20px;}
 }
 
-
 form{
   text-align: center;
   font-size: 18px;
-
 }
 
 #convert{
@@ -502,7 +504,6 @@ animation: pulse 15s infinite;
 text-align: center;
 font-size: 22px;
 background-color: black;
-
 }
 
 .dropbtn {
@@ -527,7 +528,6 @@ background-color: black;
     box-sizing:content-box;
     border-color: silver;
     border-style: groove;
-
 }
 
 .dropbtn:after {
@@ -548,8 +548,6 @@ background-color: black;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
 }
 
 .dropdown {
@@ -604,11 +602,10 @@ background-color: black;
 /* Create three columns of equal width */
 .columns {
     text-align: center;
-    width: 33.3%;
-    padding: 14px;
-    padding-left: 68px;
-    margin: auto auto;
-    display:table-cell;
+    width: 33%;
+
+
+    display: inline-block;
     justify-content: center;
     position: relative;
 
@@ -618,7 +615,7 @@ background-color: black;
 /* Style the list */
 .price {
     list-style-type: none;
-    border: 1px solid #eee;
+    border: 5px solid green;
     margin: 0;
     padding: 0;
     -webkit-transition: 0.3s;
@@ -632,22 +629,66 @@ background-color: black;
 
 /* Pricing header */
 .price .header {
-    background-color: #111;
-    color: white;
+    background-color: green;
+    color: black;
     font-size: 25px;
+    font-weight: bolder;
 }
 
 /* List items */
 .price li {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid green;
     padding: 20px;
     text-align: center;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+#myUL{
+  background-color: green;
+  border-bottom: 5px solid green;
+  border-top: 5px solid green;
+  border-left: 5px solid green;
+  border-right: 5px solid green;
+  width: 600px;
+  display: inline-block;
+
+}
+
+#ton.addBtn{
+  background-color: black;
+  border-top: 7px solid silver;
+  border-bottom: 7px solid silver;
+  border-left: 10px solid silver;
+  border-right: 10px solid silver;
+  border-style: ridge;
+  border-color: silver;
+  border-width: thick;
+  padding: 5px 15px;
+font-size: 24px;
+text-align: center;
+cursor: crosshair;
+outline: none;
+background-color: #4CAF50;
+border-radius: 15px;
+box-shadow: 5px 7px #999;
+
+}
+#ton.addBtn:hover {background-color: black;}
+
+#ton.addBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 li{
-  color: red;
-  font-size: 15px;
-  background-color: silver;
+  color: silver;
+  font-size: 16px;
+  background-color: black;
+  border-bottom: 4px solid green;
+  border-style:ridge;
 }
 
 /* Grey list item */
