@@ -43,6 +43,7 @@
    <div id="hide">
 
 
+
 <div id="convert">
 <FORM name=form1 method="post">
 
@@ -60,8 +61,22 @@
    <button id="start">START</button>
    <button id="pause">STOP</button>
  </div>
-
+ <div class="dpg-calculator water-calculator">
+ <h2 class="dpg-h2 calc-header">Water Intake Calculator
+ <div class="calc-container"><span class="calc-subheader">Weight</span>
+ <div class="calc-row"><input type="radio" id="water-pounds" name="weight-system" value="pounds" checked="checked"> <label class="calc-label-small" for="water-pounds"><span></span>Pounds</label> <input type="radio" id="water-kilos" name="weight-system" value="kilos"> <label class="calc-label-small calc-float-right" for="water-kilos"><span></span>Kilograms</label></div>
+ <div class="calc-row"><input type="text" name="weight" class="bbTextBox calc-textbox" placeholder="Pounds"></div>
+ <span class="calc-subheader">Total Daily Workout Time</span>
+ <div class="calc-row"><input type="radio" id="water-activity1" name="activity" value="L" checked="checked"> <label class="calc-label" for="water-activity1"><span></span>Less than an hour</label></div>
+ <div class="calc-row"><input type="radio" id="water-activity2" name="activity" value="M"> <label class="calc-label" for="water-activity2"><span></span>One hour</label></div>
+ <div class="calc-row"><input type="radio" id="water-activity3" name="activity" value="V"> <label class="calc-label" for="water-activity3"><span></span>More than an hour</label></div>
+ <button class="bb-flat-btn calc-submit" type="button">Calculate</button>
+ </h2>
+ <h3 class="dpg-h3 calc-answer"></h3>
+ </div>
+ </div>
 </div>
+
 <h2>
   <%= link_to "SHAWNDELL'S TRAINING PROGRAMS", new_post_path %>
 

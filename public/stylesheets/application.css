@@ -603,13 +603,9 @@ background-color: black;
 .columns {
     text-align: center;
     width: 33%;
-
-
     display: inline-block;
     justify-content: center;
     position: relative;
-
-
 }
 
 /* Style the list */

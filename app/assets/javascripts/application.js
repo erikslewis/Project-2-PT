@@ -179,4 +179,55 @@ $(function(){
                         newElement();
 
                       });
-                     });
+                      $('.water-calculator input[name="weight-system"]').click(function() {
+		var weightUnits = $(this).val();
+
+		if (weightUnits == "kilos") {
+			$('.water-calculator input[name="weight"]').attr("placeholder", "Kilograms");
+            $('.water-calculator input[name="weight"]').val("");
+		}
+
+		else if (weightUnits == "pounds") {
+			$('.water-calculator input[name="weight"]').attr("placeholder", "Pounds");
+            $('.water-calculator input[name="weight"]').val("");
+		}
+	});
+
+	$('.water-calculator .calc-submit').click(function() {
+        var weight = parseInt($('.water-calculator input[name="weight"]').val());
+		var weightType = $('.water-calculator input[name="weight-system"]:checked').val();
+		var workout = $('.water-calculator input[name=activity]:checked').val();
+        var water = 0;
+
+        if (isNaN(weight)) {
+            $('.water-calculator .calc-answer').show(0).html('<span style="color: #a30000;">Please enter your weight.</span>').addClass('animated flipInX').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $(this).removeClass('animated flipInX');
+            });
+        }
+
+        else {
+            if (weightType == "kilos") {
+                weight = (weight * 2.20462);
+            }
+
+            switch (workout) {
+                case "L":
+                    water = Math.round(weight * 0.6 + 12);
+                    break;
+                case "M":
+                    water = Math.round(weight * 0.6 + 24);
+                    break;
+                case "V":
+                    water = Math.round(weight * 0.6 + 36);
+                    break;
+             }
+
+                $('.water-calculator .calc-answer').show(0).html('<div>Target Daily Water Intake: <span class="waters extra-condensed-regular">' + water + ' oz</span></div>').addClass('animated flipInX').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                    $(this).removeClass('animated flipInX');
+                });
+        }
+    });
+
+
+  });
+                    
