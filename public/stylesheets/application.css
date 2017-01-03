@@ -135,8 +135,9 @@ animation: pulse .3s infinite;
 }
 
 #matrix{
-  display: block;
+  display: inline-flex;
   text-align: center;
+
 
 }
 
@@ -272,8 +273,8 @@ font-size: 30px;
 }
 
 img{
-  height: 440px;
-  width: 440px;
+  height: 400px;
+  width: 500px;
   text-align: center;
   display: block;
   margin: auto;
