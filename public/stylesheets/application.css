@@ -638,6 +638,30 @@ background-color: black;
   display:flex;
 
 }
+.calc-container{
+background-image: url(http://www.menshealth.com/sites/menshealth.com/files/styles/slideshow-desktop/public/3-more-protein.jpg?itok=0kPwqyaT);
+background-position: center;
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 40px;
+}
+.calc-containerw{
+background-image: url(http://il8.picdn.net/shutterstock/videos/3042673/thumb/1.jpg);
+background-position: center;
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 40px;
+}
+.calc-containerc{
+background-image: url(http://previews.123rf.com/images/iqoncept/iqoncept1409/iqoncept140900080/31544906-Carbs-word-on-a-scale-to-illustrate-eating-too-much-carbohydrates-in-your-diet-and-needing-to-cut-on-Stock-Photo.jpg);
+background-position: center;
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 40px;
+}
 
 /* Create three columns of equal width */
 .columns {
