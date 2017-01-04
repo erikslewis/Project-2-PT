@@ -15,9 +15,12 @@ background-repeat: no-repeat;
 background-position: center center;
 background-position: center;
 justify-content: center;
-background-size:1000px 1300px;
 background-color: black;
-background-position: 45% 90%;
+background-size: cover;
+/* Preserve aspet ratio */
+ min-width: 100%;
+ min-height: 100%;
+
 
 }
 
