@@ -17,6 +17,9 @@ document.form1.total2.value = d
                          };
 
 
+                         
+
+
 
 
 

@@ -21,7 +21,13 @@ background-size:cover;
  min-height: 90%;
  background-size: 1300px 1150px;
 
-
+}
+#map_canvas{
+  width: 400px;
+  height: 250px;
+  display: block;
+  position: relative;
+  margin: auto;
 }
 
 #myInput{
