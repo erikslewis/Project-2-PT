@@ -10,16 +10,16 @@ font-size: 13px;
 line-height: 17px;
 margin: auto;
 background-image: url('images/FullSizeRender.jpg');
-background-attachment: scroll;
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center center;
 background-position: center;
 justify-content: center;
 background-color: black;
-background-size: contain;
+background-size:cover;
 /* Preserve aspet ratio */
- min-width: 100%;
- min-height: 100%;
+ min-width: 70%;
+ min-height: 70%;
 
 
 }
