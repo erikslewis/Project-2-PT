@@ -514,6 +514,9 @@ form{
   text-align: center;
   font-size: 18px;
 }
+p{
+  font-size: 13px;
+}
 
 #convert{
 border: 18px inset;
@@ -624,7 +627,7 @@ background-color: black;
 
 .calc-subheader{
   text-align: left;
-  background-color: rgb(0, 176, 41);
+  background-color: black;
   font-size: 14px;
 
 
@@ -632,10 +635,24 @@ background-color: black;
 
 .calc-row{
   display:flex;
+  text-align: left;
+
 
 }
 .calc-label{
   display:flex;
+  background-color: black;
+  width: auto;
+  height: 30%;
+  text-align: left;
+  position: relative;
+
+}
+.calc-label-small{
+  background-color: black;
+  width: auto;
+  height: 30%;
+  margin: auto;
 
 }
 .calc-container{
