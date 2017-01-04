@@ -13,9 +13,11 @@ background-image: url('images/FullSizeRender.jpg');
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center center;
+background-position: center;
 justify-content: center;
 background-size: cover;
 background-color: black;
+background-position: 45% 90%
 
 }
 
@@ -309,7 +311,6 @@ input{
   border-width: thick;
   border-style: groove;
   border-style: ridge;
-
 }
 
 footer{
@@ -383,8 +384,8 @@ font-size: 30px;
 }
 
 img{
-  height: 200px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   text-align: center;
   display: block;
   margin: auto;
