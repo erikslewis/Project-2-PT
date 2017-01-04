@@ -16,8 +16,16 @@ d = c*100;
 document.form1.total2.value = d
                          };
 
+                         var myVar;
 
-                         
+                         function myFunction() {
+                             myVar = setTimeout(showPage, 3000);
+                         }
+
+                         function showPage() {
+                           document.getElementById("loader").style.display = "none";
+                           document.getElementById("myDiv").style.display = "block";
+                         }
 
 
 

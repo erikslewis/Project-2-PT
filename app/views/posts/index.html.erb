@@ -4,12 +4,7 @@
    <meta charset="utf-8">
    <title>Shawndell</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-    <!-- for mobile view -->
-
-
-    
+  <!-- for mobile view -->
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&sensor=false&language=en&key=AIzaSyAj0_MdflBT4kNx-hS2q78F4oDsl__kDio"></script>
     <script type="text/javascript">
 
@@ -93,25 +88,30 @@
         });
     </script>
 </head>
- <body>
+ <body onload="myFunction()" style="margin:0;">
 
+<div id="loader"></div>
 
+<div style="display:none;" id="myDiv" class="animate-bottom">
   <h2>
-    <div id="myDIV" class="header">
-   <input type="text" id="myInput" placeholder="To Do List...">
-   <span id="ton" class="addBtn">ADD</span>
- </div>
+      <div id="myDIV" class="header">
+     <input type="text" id="myInput" placeholder="To Do List...">
+     <span id="ton" class="addBtn">ADD</span>
+   </div>
 
- <ul id="myUL">
-   <li>Hit the gym</li>
-   <li class="checked">80 Percent training</li>
-   <li>High Protien Diet</li>
-   <li>Drink a Gallon of water</li>
-   <li>20 minutes of cardio</li>
-   <li>One Rep max lifts</li>
- </ul>
+   <ul id="myUL">
+     <li>Hit the gym</li>
+     <li class="checked">80 Percent training</li>
+     <li>High Protien Diet</li>
+     <li>Drink a Gallon of water</li>
+     <li>20 minutes of cardio</li>
+     <li>One Rep max lifts</li>
+   </ul>
+  </div>
+  </h2>
 </div>
-</h2>
+
+
 
 
    <div id="bar">
@@ -179,10 +179,10 @@
 <div class="calc-row"><input id="protein-goal2" name="goal" value="maintenance" type="radio"> <label class="calc-label" for="protein-goal2"><span></span>Build Lean Muscle </label></div>
 <div class="calc-row"><input id="protein-goal3" name="goal" value="gainz" type="radio"> <label class="calc-label" for="protein-goal3"><span></span>Muscle Gains Over EveryThing</label></div>
 <span class="calc-subheader">Activity Level</span>
-<div class="calc-row"><input id="protein-activity1" name="activity" value="L" checked="checked" type="radio"> <label class="calc-label" for="protein-activity1"><span></span>Lightly active (moderate exercise but sedentary job)</label></div>
-<div class="calc-row"><input id="protein-activity2" name="activity" value="M" type="radio"> <label class="calc-label" for="protein-activity2"><span></span>Moderately active (intense exercise but sedentary job)</label></div>
-<div class="calc-row"><input id="protein-activity3" name="activity" value="V" type="radio"> <label class="calc-label" for="protein-activity3"><span></span>Very active (moderate exercise and active job)</label></div>
-<div class="calc-row"><input id="protein-activity4" name="activity" value="E" type="radio"> <label class="calc-label" for="protein-activity4"><span></span>Extra active (intense exercise and active job)</label></div>
+<div class="calc-row"><input id="protein-activity1" name="activity" value="L" checked="checked" type="radio"> <label class="calc-label" for="protein-activity1"><span></span>Lightly Active... Light Exercise With Desk A Job</label></div>
+<div class="calc-row"><input id="protein-activity2" name="activity" value="M" type="radio"> <label class="calc-label" for="protein-activity2"><span></span>Moderately Active...Intense Exercise & A Desk Job</label></div>
+<div class="calc-row"><input id="protein-activity3" name="activity" value="V" type="radio"> <label class="calc-label" for="protein-activity3"><span></span>Very Active...Moderate Exercise With An Active Job</label></div>
+<div class="calc-row"><input id="protein-activity4" name="activity" value="E" type="radio"> <label class="calc-label" for="protein-activity4"><span></span>Extremely Active...Intense Exercise With An Active Job</label></div>
 <button class="bb-flat-btn calc-submit" type="button">CALCULATE</button>
 </h2>
 <h3 class="dpg-h3 calc-answer"></h3>
@@ -197,9 +197,9 @@
 <div class="calc-row"><input type="radio" id="water-pounds" name="weight-system" value="pounds" checked="checked"> <label class="calc-label-small" for="water-pounds"><span></span>POUNDS</label> <input type="radio" id="water-kilos" name="weight-system" value="kilos"> <label class="calc-label-small calc-float-right" for="water-kilos"><span></span>KILOGRAMS</label></div>
 <div class="calc-row"><input type="text" name="weight" class="bbTextBox calc-textbox" placeholder="POUNDS"></div>
 <span class="calc-subheader">Total Daily Workout Time</span>
-<div class="calc-row"><input type="radio" id="water-activity1" name="activity" value="L" checked="checked"> <label class="calc-label" for="water-activity1"><span></span>Less than an hour</label></div>
-<div class="calc-row"><input type="radio" id="water-activity2" name="activity" value="M"> <label class="calc-label" for="water-activity2"><span></span>One hour</label></div>
-<div class="calc-row"><input type="radio" id="water-activity3" name="activity" value="V"> <label class="calc-label" for="water-activity3"><span></span>More than an hour</label></div>
+<div class="calc-row"><input type="radio" id="water-activity1" name="activity" value="L" checked="checked"> <label class="calc-label" for="water-activity1"><span></span>Less Than An Hour</label></div>
+<div class="calc-row"><input type="radio" id="water-activity2" name="activity" value="M"> <label class="calc-label" for="water-activity2"><span></span>One Hour</label></div>
+<div class="calc-row"><input type="radio" id="water-activity3" name="activity" value="V"> <label class="calc-label" for="water-activity3"><span></span>More Than An Hour</label></div>
 <button class="bb-flat-btn calc-submit" type="button">CALCULATE</button>
 </h2>
 <h3 class="dpg-h3 calc-answer"></h3>
@@ -224,11 +224,11 @@
 <div class="calc-row"><input id="carb-goal1" name="goal" value="fat-loss" checked="checked" type="radio"> <label class="calc-label" for="carb-goal1"><span></span>Fat Loss</label></div>
 <div class="calc-row"><input id="carb-goal2" name="goal" value="maintenance" type="radio"> <label class="calc-label" for="carb-goal2"><span></span> Build Lean Muscle </label></div>
 <div class="calc-row"><input id="carb-goal3" name="goal" value="gainz" type="radio"> <label class="calc-label" for="carb-goal3"><span></span>Muscle Gains Over EveryThing</label></div>
-<span class="calc-subheader">Activity Level</span>
-<div class="calc-row"><input id="carb-activity1" name="activity" value="L" checked="checked" type="radio"> <label class="calc-label" for="carb-activity1"><span></span>Lightly active (moderate exercise but sedentary job)</label></div>
-<div class="calc-row"><input id="carb-activity2" name="activity" value="M" type="radio"> <label class="calc-label" for="carb-activity2"><span></span>Moderately active (intense exercise but sedentary job)</label></div>
-<div class="calc-row"><input id="carb-activity3" name="activity" value="V" type="radio"> <label class="calc-label" for="carb-activity3"><span></span>Very active (moderate exercise and active job)</label></div>
-<div class="calc-row"><input id="carb-activity4" name="activity" value="E" type="radio"> <label class="calc-label" for="carb-activity4"><span></span>Extra active (intense exercise and active job)</label></div>
+<span class="calc-subheader">ACTIVITY LEVEL</span>
+<div class="calc-row"><input id="carb-activity1" name="activity" value="L" checked="checked" type="radio"> <label class="calc-label" for="carb-activity1"><span></span>Lightly Active... Light Exercise With Desk A Job</label></div>
+<div class="calc-row"><input id="carb-activity2" name="activity" value="M" type="radio"> <label class="calc-label" for="carb-activity2"><span></span>Moderately Active...Intense Exercise & A Desk Job</label></div>
+<div class="calc-row"><input id="carb-activity3" name="activity" value="V" type="radio"> <label class="calc-label" for="carb-activity3"><span></span>Very Active...Moderate Exercise With An Active Job</label></div>
+<div class="calc-row"><input id="carb-activity4" name="activity" value="E" type="radio"> <label class="calc-label" for="carb-activity4"><span></span>Extremely Active...Intense Exercise With An Active Job</label></div>
 <button class="bb-flat-btn calc-submit" type="button">CALCULATE</button>
 </h2>
 <h3 class="dpg-h3 calc-answer"></h3>
@@ -340,7 +340,6 @@
     Shoulder Exercise Five:
 
    </div>
-
 
 
    <footer>Professional Personal Training</footer>

@@ -22,8 +22,67 @@ background-size:cover;
  background-size: 1300px 1150px;
 
 }
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px double black;
+  border-radius: 50%;
+  border-top: 16px double rgb(0, 176, 41);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+ul{
+  background-color: green;
+  border-radius: 20px;
+}
+
 #map_canvas{
-  width: 400px;
+  width: 500px;
   height: 250px;
   display: block;
   position: relative;
@@ -214,7 +273,6 @@ time{
   color: #666;
 }
 
-
 label,
 input[type="text"],
 textarea{
@@ -310,7 +368,7 @@ img#selector {
     }
 
 input{
-  color: black;
+  color: rgb(0, 176, 41);
   width: 135px;
   height: 40px;
   border-radius: 18px;
@@ -521,7 +579,7 @@ form{
   font-size: 18px;
 }
 p{
-  font-size: 13px;
+  font-size: 19px;
 }
 
 #convert{
@@ -632,17 +690,14 @@ background-color: black;
 }
 
 .calc-subheader{
-  text-align: left;
+  text-align: center;
   background-color: black;
   font-size: 14px;
-
-
 }
 
 .calc-row{
   display:flex;
   text-align: left;
-
 
 }
 .calc-label{
@@ -652,13 +707,16 @@ background-color: black;
   height: 30%;
   text-align: left;
   position: relative;
+  left: -30px;
+  font-size: 14px;
 
 }
 .calc-label-small{
   background-color: black;
   width: auto;
-  height: 30%;
+  height: 40%;
   margin: auto;
+  font-size: 20px;
 
 }
 .calc-container{
@@ -684,6 +742,7 @@ position: relative;
 background-repeat: no-repeat;
 background-size: cover;
 border-radius: 40px;
+
 }
 
 /* Create three columns of equal width */
@@ -772,6 +831,7 @@ li{
   background-color: black;
   border-bottom: 4px solid green;
   border-style:ridge;
+  border-radius: 18px;
 }
 
 /* Grey list item */
