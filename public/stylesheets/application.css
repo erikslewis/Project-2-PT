@@ -149,8 +149,9 @@ h3{
   border-right-color: rgba(225, 225, 225, .5);
   border-bottom-color: rgb(0, 176, 41);
   animation: pulse 9s infinite;
-  -webkit-text-stroke: 2px yellow;
+  -webkit-text-stroke: 1px silver;
   text-align: center;
+  font-size: 20px;
 }
 
 h4{
@@ -254,17 +255,29 @@ a:hover{
 
 #cal:hover{
   background-color: rgb(0, 176, 41);
-font-size: 30px;
+font-size: 26px;
 animation: pulse .3s infinite;
   -webkit-text-stroke: 2px yellow;
 
 }
 #set:hover{
   background-color: rgb(0, 176, 41);
-font-size: 30px;
+font-size: 26px;
 animation: pulse .3s infinite;
   -webkit-text-stroke: 2px yellow;
 
+}
+#set{
+  background-color: silver;
+  border-radius: 2px;
+  border-color: green;
+ border-width: thick;
+}
+#cal{
+    background-color: silver;
+    border-radius: 2px;
+    border-color: green;
+    border-width: thick;
 }
 
 #matrix{
@@ -290,9 +303,12 @@ input{
   width: 135px;
   height: 40px;
   border-radius: 18px;
-  background-color: silver;
+  background-color: black;
   font-size: 22px;
   text-align: center;
+  border-width: thick;
+  border-style: groove;
+  border-style: ridge;
 
 }
 
@@ -311,7 +327,7 @@ footer{
 button{
   font-size: 22px;
   background-color: rgb(0, 176, 41);
-  color: inherit;
+
   width: 200px;
   border-radius: 15px;
   animation: pulse 10s infinite;
@@ -320,8 +336,11 @@ button{
   padding: 10px;
   width: 50%;
   cursor: crosshair;
-
+  border: 10px solid silver;
+  border-style: outset;
+  border-color: silver;
 }
+
 #button2:hover{
     background-color: rgb(0, 176, 41);
 font-size: 30px;
@@ -597,6 +616,23 @@ background-color: black;
 }
 * {
     box-sizing: border-box;
+}
+
+.calc-subheader{
+  text-align: left;
+  background-color: rgb(0, 176, 41);
+  font-size: 14px;
+
+
+}
+
+.calc-row{
+  display:flex;
+
+}
+.calc-label{
+  display:flex;
+
 }
 
 /* Create three columns of equal width */
