@@ -100,11 +100,6 @@ $(document).ready(function() {
       initLocationProcedure();
   });
 
-  $('#button1').css('cursor','pointer');
-$(document).on('click', '#reset',  function(event) {
-    event.preventDefault()
-    
-});
 
   (function () {
       var audio = new Audio();
@@ -239,6 +234,12 @@ $(function(){
     $("#show1").hide();
     $("#button1").on("click", function(){
         $("#hide, #show1").toggle(450);
+        $('#button1').css('cursor','pointer');
+      $(document).on('click', '#reset',  function(event) {
+          event.preventDefault()
+
+      });
+
     });
   });
 
