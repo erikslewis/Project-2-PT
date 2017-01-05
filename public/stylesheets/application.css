@@ -25,20 +25,18 @@ background-size:cover;
 
 /* Center the loader */
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  position: relative;
   z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px double black;
+  display: block;
+  margin: auto;
+  border: 16px double silver;
   border-radius: 50%;
   border-top: 16px double rgb(0, 176, 41);
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+  margin-bottom: 20px;
 
 }
 
