@@ -177,8 +177,8 @@ document.form1.total2.value = d
           annyang.start();
       }
 
-      annyang.addCallback('error', function () {
-          communicateAction('error');
+      annyang.addCallback('', function () {
+          communicateAction('');
       });
   })();
 
@@ -234,7 +234,7 @@ $(function(){
     $("#show1").hide();
     $("#button1").on("click", function(){
         $("#hide, #show1").toggle(450);
-      
+
 
     });
   });
