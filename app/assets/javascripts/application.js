@@ -103,7 +103,7 @@ $(document).ready(function() {
   $('#button1').css('cursor','pointer');
 $(document).on('click', '#reset',  function(event) {
     event.preventDefault()
-    alert('button1');
+    
 });
 
   (function () {
