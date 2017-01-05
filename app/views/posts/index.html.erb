@@ -1,11 +1,13 @@
-
 <html>
  <head>
    <meta charset="utf-8">
    <title>Shawndell</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
   <!-- for mobile view -->
+
+
 
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&sensor=false&language=en&key=AIzaSyAj0_MdflBT4kNx-hS2q78F4oDsl__kDio"></script>
     <script type="text/javascript">
@@ -88,24 +90,28 @@
             initLocationProcedure();
         });
     </script>
+
 </head>
  <body onload="myFunction()" style="margin:0;">
 
 <div id="loader"></div>
 
+
+<main>
 <div id="commands">
-         <h1>Play songs through voice commands</h1>
-         <p>This demo uses speech recognition and the <a href="https://developer.spotify.com/web-api/">Spotify Web API</a> to play songs. Try it using some of the commands below. Remember to allow the use of the microphone.</p>
-        <p>For instance "Play Some Nights"</p>
+     <h1>Play songs through voice commands</h1>
+     <p>This demo uses speech recognition and the <a href="https://developer.spotify.com/web-api/">Spotify Web API</a> to play songs. Try it using some of the commands below. Remember to allow the use of the microphone.</p>
+    <p>For instance "Play Some Nights"</p>
 
-        <h2>Voice commands</h2>
-        <ul>
-            <li>Play {song name}</li>
-            <li>Play {song name} by {artist name}</li>
-        </ul>
-    </div>
-    <div id="conversation"></div>
-
+    <h2>Voice commands</h2>
+    <ul>
+        <li>Play {song name}</li>
+        <li>Play {song name} by {artist name}</li>
+    </ul>
+</div>
+<div id="conversation"></div>
+</main>
+<footer>This demo uses the Spotify Web API and the library <a href="https://github.com/TalAter/annyang">annyang</a> to make it easy to match recognised text with rules.</footer>
 <div style="display:none;" id="myDiv" class="animate-bottom">
   <h2>
       <div id="myDIV" class="header">
