@@ -100,6 +100,12 @@ $(document).ready(function() {
       initLocationProcedure();
   });
 
+  $('#button1').css('cursor','pointer');
+$(document).on('click', '#button1',  function(event) {
+    event.preventDefault()
+    alert('button1');
+});
+
   (function () {
       var audio = new Audio();
 
