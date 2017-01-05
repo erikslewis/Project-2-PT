@@ -225,18 +225,15 @@ h3{
 }
 
 h4{
-  background-color: rgb(0, 176, 41);
   text-align: center;
   color: black;
-  border-radius: 15px;
   text-decoration: underline;
-  padding-bottom: 10px;
-  padding-top: 5px;
   width: 490px;
   position: relative;
   display: inline-block;
-
+  margin-top: 10px;
 }
+
 h5{
 background-image: url(https://pbs.twimg.com/profile_images/755013009005768704/XsPcv__-.jpg);
 background-attachment: scroll;
@@ -245,7 +242,6 @@ background-size: cover;
 background-position: 10% 38%;
 font-size: 30px;
 height: 175px;
-
 }
 
 h6{
@@ -362,39 +358,14 @@ header{
   width: auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-h1, h2, p {
-    margin-bottom: 20px;
-}
-h1 {
-    line-height: 1.3em;
-}
-body {
-    font-family: Helvetica, Arial;
-    font-size: 16px;
-    line-height: 1.3em;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
+
 main {
     flex: 1;
     margin: 20px auto;
     max-width: 800px;
     padding: 0 20px;
 }
-footer {
-    background-color: #eee;
-    padding: 10px;
-    text-align: center
-}
-ul {
-    margin-left: 30px;
-}
+
 .action, .recognized {
     padding: 10px;
     position: relative;
@@ -402,9 +373,9 @@ ul {
     width:80%;
 }
 .action {
-    text-align: right;
-    background-color: #ddd;
-    margin-left:20%;
+    text-align: center;
+    background-color: black;
+    margin:auto;
     border-radius: 5px 5px 0 5px;
 }
 .action:after {
@@ -414,26 +385,34 @@ ul {
     height: 0;
     border-width: 18px;
     border-style: solid;
-    border-color: transparent transparent #ddd transparent;
+    border-color: transparent transparent black transparent;
     bottom: 0px;
     right: -17px;
+    text-align: center;
+    display: block;
+
 }
 .recognized {
-    text-align: left;
-    background-color: #eee;
+    text-align: center;
+    background-color: black;
     font-weight: bold;
-    border-radius: 5px 5px 5px 0;
+    border-radius: 18px;
+    display: block;
+    position: relative;
+    margin: auto;
 }
 .recognized:after {
     content:"";
-    position: absolute;
+    position: relative;
     width: 0;
     height: 0;
     border-width: 18px;
     border-style: solid;
-    border-color: transparent transparent #eee transparent;
+    border-color: transparent transparent black transparent;
     bottom: 0px;
-    left: -17px;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 .recognized > div:before {
     content: open-quote
@@ -443,17 +422,25 @@ ul {
 }
 #conversation {
     padding: 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: auto;
 }
 #conversation::before {
     content:"";
     height: 1px;
     width: 200px;
-    background-color: #ddd;
+    background-color: black;
     display: block;
     margin: 10px auto;
 }
 #conversation img {
     margin-top: 5px;
+    display: block;
+    text-align: center;
+    width: 350px;
+    height: 300px;
 }
 
 img#selector {
@@ -489,7 +476,6 @@ footer{
 button{
   font-size: 22px;
   background-color: rgb(0, 176, 41);
-
   width: 200px;
   border-radius: 15px;
   animation: pulse 10s infinite;
@@ -505,9 +491,6 @@ button{
   text-align: center;
 
 }
-
-
-
 
 #button2:hover{
     background-color: rgb(0, 176, 41);
@@ -562,23 +545,20 @@ img{
 }
 
 #show1.hidden.newbuttons{
-    display: inline-block;;
-
+    display: inline-block;
     text-align: center;
     justify-content: center;
     margin: auto;
     width: 500px;
-
 }
 
 div.controls{
   text-align: center;
   font-size: 30px;
-  color: silver
+  color: silver;
   min-width: 375px;
   background-color: rgb(0, 176, 41);
-  padding: 5px;
-  margin: 40px;
+  margin: 120px;
   box-sizing: border-box;
   border: 15px inset;
   border-radius: 100px;
@@ -589,9 +569,7 @@ div.controls{
   animation: pulse 15s infinite;
   -webkit-text-stroke: 2px yellow;
   text-align: center;
-
 }
-
 
 #timer{
 text-align: center;
@@ -599,15 +577,10 @@ position: relative;
 font-size: 33px;
 color: black;
 text-decoration: underline;
-background-color: rgb(0, 176, 41);
-border-radius: 15px;
-padding-top: 10px;
-padding-bottom: 10px;
 width: 350px;
-height: 40px;
 display: inline-block;
 justify-content: center;
-
+margin-top: 10px;
 }
 
 #reset:hover{
@@ -615,8 +588,6 @@ justify-content: center;
   font-size: 30px;
     animation: pulse .5s infinite;
     -webkit-text-stroke: 2px yellow;
-    padding-top: 6px;
-
 }
 
 #pause:hover{
