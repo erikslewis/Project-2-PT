@@ -234,11 +234,7 @@ $(function(){
     $("#show1").hide();
     $("#button1").on("click", function(){
         $("#hide, #show1").toggle(450);
-        $('#button1').css('cursor','pointer');
-      $(document).on('click', '#button1',  function(event) {
-          event.preventDefault()
-
-      });
+      
 
     });
   });
