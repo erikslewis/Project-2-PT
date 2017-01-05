@@ -101,7 +101,7 @@ $(document).ready(function() {
   });
 
   $('#button1').css('cursor','pointer');
-$(document).on('click', '#button1',  function(event) {
+$(document).on('click', '#reset',  function(event) {
     event.preventDefault()
     alert('button1');
 });
