@@ -127,7 +127,6 @@ ul{
   position: relative;
   justify-content: center;
   display: block;
-  padding-left: 28%;
 
 }
 h1 {
@@ -541,11 +540,13 @@ img{
 }
 
 #show1.hidden.newbuttons{
-    display: inline-block;
+    display: block;
     text-align: center;
     justify-content: center;
     margin: auto;
-    width: 500px;
+    width: 600px;
+    position: relative;
+    height:600px;
 }
 
 div.controls{
