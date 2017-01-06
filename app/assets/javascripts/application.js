@@ -202,7 +202,7 @@ var timer = {
   },
 
   setupListeners: function () {
-    this.clock.start.on('focus', function() {
+    this.clock.start.click(function () {
       console.log('start');
       this.clock.timer.text('TIME ELAPSED: ' + this.seconds);
       if (this.run === false){
