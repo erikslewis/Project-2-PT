@@ -3,9 +3,7 @@
 //= require turbolinks
 //= require_tree
 
-$(window).load(function() {
-      alert("window load occurred!");
-});
+
 
 function perc1() {
 a = document.form1.a.value/100;
@@ -23,7 +21,7 @@ document.form1.total2.value = d
 
 
 
-                         $(document).ready(function() {
+                         $(window).load(function() {
                           //  var map,
                           //      currentPositionMarker,
                           //      mapCenter = new google.maps.LatLng(14.668626, 121.24295),
