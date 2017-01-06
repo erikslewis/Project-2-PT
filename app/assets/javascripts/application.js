@@ -3,6 +3,9 @@
 //= require turbolinks
 //= require_tree
 
+$(window).load(function() {
+      alert("window load occurred!");
+});
 
 function perc1() {
 a = document.form1.a.value/100;
