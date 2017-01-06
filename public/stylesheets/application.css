@@ -243,14 +243,14 @@ height: 175px;
 }
 
 h6{
-  font-size: 14px;
+  font-size: 24px;
   text-align: center;
   color: silver;
   font-weight: bolder;
   text-outline: 2px red;
   background-color: black;
   padding: 12px;
-  margin: 40px;
+  margin: 20px;
   box-sizing: border-box;
   border: 15px inset;
   border-radius: 100px;
@@ -273,6 +273,9 @@ textarea{
   width:100%;
   font:inherit;
   display:block;
+  height: 40px;
+  border-radius: 20px;
+
 }
 
 .comments{
@@ -832,11 +835,12 @@ border-radius: 40px;
 /* Style the list */
 .price {
     list-style-type: none;
-    border: 5px solid green;
+    border: 8px solid silver;
     margin: 0;
     padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+
 }
 
 /* Add shadows on hover */
@@ -846,10 +850,14 @@ border-radius: 40px;
 
 /* Pricing header */
 .price .header {
-    background-color: green;
+    background-color: silver;
     color: black;
     font-size: 25px;
     font-weight: bolder;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    line-height: 100%;
+
 }
 
 /* List items */
