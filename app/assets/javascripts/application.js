@@ -3,7 +3,7 @@
 //= require turbolinks
 //= require_tree
 
- $(window).load(function() {
+
 
 function perc1() {
 a = document.form1.a.value/100;
@@ -21,7 +21,7 @@ document.form1.total2.value = d
 
 
 
-
+ $(window).load(function() {
                           //  var map,
                           //      currentPositionMarker,
                           //      mapCenter = new google.maps.LatLng(14.668626, 121.24295),
@@ -202,7 +202,7 @@ var timer = {
   },
 
   setupListeners: function () {
-    this.clock.start.on('click', function() {
+    this.clock.start.on('focus', function() {
       console.log('start');
       this.clock.timer.text('TIME ELAPSED: ' + this.seconds);
       if (this.run === false){
