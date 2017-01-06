@@ -21,7 +21,7 @@ document.form1.total2.value = d
 
 
 
- $(window).load(function() {
+$(document).ready(function() {
                           //  var map,
                           //      currentPositionMarker,
                           //      mapCenter = new google.maps.LatLng(14.668626, 121.24295),
@@ -178,9 +178,9 @@ document.form1.total2.value = d
           annyang.start();
       }
 
-      annyang.addCallback('', function () {
-          communicateAction('');
-      });
+      // annyang.addCallback('er', function () {
+      //     communicateAction('er');
+      // });
   })();
 
 
@@ -334,7 +334,7 @@ $(function(){
                           }
                         }
                       }
-                      $("#ton").on("click",function(){
+                      $("#ton").click(function () {
                         newElement();
 
                       });
