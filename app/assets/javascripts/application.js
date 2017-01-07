@@ -279,6 +279,30 @@ $(function(){
 
                         });
                       });
+                      $(function(){
+                          $("#show8").hide();
+                          $("#button8").on("click", function(){
+                          $("#hide2, #show8").toggle(450);
+                          });
+                        });
+                        $(function(){
+                            $("#show9").hide();
+                            $("#button9").on("click", function(){
+                            $("#hide2, #show9").toggle(450);
+                            });
+                          });
+                          $(function(){
+                              $("#show10").hide();
+                              $("#button10").on("click", function(){
+                              $("#hide2, #show10").toggle(450);
+                              });
+                            });
+                            $(function(){
+                                $("#show11").hide();
+                                $("#button11").on("click", function(){
+                                $("#hide2, #show11").toggle(450);
+                                });
+                              });
 
                       var myNodelist = document.getElementsByTagName("LI");
                       var i;
@@ -300,7 +324,7 @@ $(function(){
                         }
                       }
 
-                      
+
 
                       // Create a new list item when clicking on the "Add" button
                       function newElement() {

@@ -195,8 +195,8 @@ h2{
   border: 15px inset;
   border-radius: 100px;
   border-top-color: rgb(0, 176, 41);
-  border-left-color: silver;
-  border-right-color: rgba(225, 225, 225, .5);
+  border-left-color: rgba(225, 225, 225, .5);
+  border-right-color: silver;
   border-bottom-color: rgb(0, 176, 41);
 
 }
@@ -613,6 +613,9 @@ margin-top: 10px;
 div#hide{
   text-align: center;
 }
+div#hide2{
+  display: none;
+}
 
 @keyframes pulse {
   0% {
@@ -822,6 +825,16 @@ background-size: cover;
 border-radius: 40px;
 
 }
+.dpg-h2.calc-header1{
+  color: #87CEFA;
+}
+.dpg-h2.calc-header{
+  color: #FFFACD
+}
+.dpg-h2.calc-header2{
+  color:white;
+}
+
  div.fix{
    margin: 0;
    text-align: center;
