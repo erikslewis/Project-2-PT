@@ -1,7 +1,7 @@
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree
+
 
 
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 
           // Add our commands to annyang
           annyang.addCommands(commands);
-          
+
 
           // Start listening. You can call this here, or attach this call to an event, button, etc.
           annyang.start();
