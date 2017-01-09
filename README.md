@@ -14,4 +14,5 @@ Users can register and sign in so they can create a post to track your acomplish
 edit and delete them. and you can create commentsd attached to a specific post.
 unresolved problems  are voice commands do not work on mobile phones
 only on desktop. another problem is turbolinks does not always load the JS and you have to refresh some times.
-Other issues I encounter creating this app was making the JS work on every Browser from Chrome to Safari but i was able to solve that major problem. and it all now works on any major browser 
+Had a few issues with google maps so i had to remove it for now.
+Other issues I encounter creating this app was making the JS work on every Browser from Chrome to Safari but i was able to solve that major problem. and it all now works on any major browser
