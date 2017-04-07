@@ -136,10 +136,10 @@ h1 {
     border-radius: 15px;
     font-size: 33px;
     display: block;
-    margin: auto;
-    width: 550px;
-    height: 45px;
-    background-color: black;
+    margin: 00px;
+
+    height: 55px;
+
     position: relative;
     text-align: center;
     justify-content: center;
@@ -300,16 +300,61 @@ div.gif{
 a{
   color: silver;
   text-align: center;
-  display: block;
-  position: relative;
-  margin: auto;
   font-size: 37px;
-  text-align: center;
   border-radius: 15px;
   text-decoration: underline;
-  margin-bottom: 5px;
-  padding-top: 10px;
+  font-weight: bolder;
+  text-outline: 2px red;
+  background-color: black;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 10px inset;
+  border-radius: 100px;
+  border-width: 10px;
+  border-top-color: rgb(0, 176, 41);
+  border-left-color: rgba(225, 225, 225, .5);
+  border-right-color: silver;
+  border-bottom-color: rgb(0, 176, 41);
+  -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 5s linear 10s infinite alternate;
+
+
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  /* Standard syntax */
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+  25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+  50%  {background-color:black; left:200px; top:25px;}
+  75%  {background-color:rgb(0, 176, 41); left:200px; top:25px;}
+  100% {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:rgb(0, 176, 41); left:0px; top:0px;}
+  25%  {background-color:rgb(0, 176, 41); left:200px; top:0px;}
+  50%  {background-color:black; left:200px; top:25px;}
+  75%  {background-color:black; left:-200px; top:25px;}
+  100% {background-color:rgb(0, 176, 41); left:-200px; top:0px;}
+}
+
+}
+
 
 a:hover{
   background-color: yellow;
@@ -669,7 +714,9 @@ form{
   margin-bottom: 20px;
 }
 p{
-  font-size: 19px;
+  font-size: 38px;
+  font-weight: bolder;
+  color: silver;
 }
 
 #convert{
@@ -691,15 +738,15 @@ margin-top: 20px;
     background-color: #4CAF50;
     color: white;
     display: block;
-    margin: auto;
+    margin: 80px auto;
     text-align: center;
     position: relative;
     background-color: #4CAF50;
     border: 19px;
-    font-size: 28px;
+    font-size: 48px;
     color: #FFFFFF;
     padding: 20px;
-    width: 300px;
+    width: 500px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration:none;
