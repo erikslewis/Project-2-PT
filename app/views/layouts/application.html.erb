@@ -9,7 +9,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <header> Shawndell's Pro Fitness Training</header>
 
@@ -19,82 +19,35 @@
 <style>
 body {font-family: "Lato", sans-serif;}
 
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 30px;
-    width: 25%;
-    padding-bottom: 20px;
 
-}
-
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 30px;
-    text-align: center;
-
-}
-
-#London {background-image:url('/stylesheets/images/14907204_1817520081865549_8585120349870430279_n.jpg');
-background-position:left;
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-position: 50% 34%;
-
-}
-
-#Paris {background-image:url('/stylesheets/images/17499003_1327856040614591_1354611086030682779_n.jpg');
-background-position:left;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 50% 20%;
-}
-#Tokyo {background-image:url('/stylesheets/images/13658966_1773058129645078_6468224816592313805_n.jpg');
-background-position:left;
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-position: 50% 0%;}
-#Oslo {background-image:url('/stylesheets/images/14633082_1815966292020928_2962409100021604550_n.jpg');
-background-position:left;
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-position: 50% -24%;
-}
 </style>
 </head>
 <body>
 
 <div id="London" class="tabcontent">
-  <%= link_to "Guest Tour", posts_path %><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="animated infinite pulse">
+  <%= link_to "Guest Tour", posts_path %></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <p>Explore Then Join</p>
 </div>
 
 <div id="Paris" class="tabcontent">
-  <%= link_to "Sign In", new_user_session_path %><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="animated infinite pulse">
+  <%= link_to "Sign In", new_user_session_path %></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <p>Log In </p>
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <%= link_to "Sign Up", new_user_registration_path %><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="animated infinite pulse">
+  <%= link_to "Sign Up", new_user_registration_path %></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <p>Join The Team</p>
 </div>
 
 <div id="Oslo" class="tabcontent">
-  <%= link_to "Members Only Training Access ", new_post_path %><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="animated infinite pulse">
+  <%= link_to "Members Only Training Access ", new_post_path %></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <p>Members Only Area</p>
 </div>

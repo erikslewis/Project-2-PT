@@ -315,22 +315,22 @@ a{
   border-left-color: rgba(225, 225, 225, .5);
   border-right-color: silver;
   border-bottom-color: rgb(0, 176, 41);
-  -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
-  animation: myfirst 5s linear 10s infinite alternate;
+  -webkit-animation: myfirst 2s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 2s linear 2s infinite alternate;
 
 
   /* Safari 4.0 - 8.0 */
   -webkit-animation-name: example;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 7s;
+  -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   /* Standard syntax */
   animation-name: example;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-timing-function: linear;
-  animation-delay: 20s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -1021,4 +1021,61 @@ li{
     .columns {
         width: 100%;
     }
+}
+.tablink {
+  background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 30px;
+    width: 25%;
+    padding-bottom: 20px;
+
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    background-color: black;
+    display: none;
+    padding: 30px;
+    text-align: center;
+
+}
+
+#London {background-image:url('/stylesheets/images/14907204_1817520081865549_8585120349870430279_n.jpg');
+background-position:bottom;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-position: % %;
+background-size: cover;
+
+
+}
+
+#Paris {background-image:url('/stylesheets/images/14633082_1815966292020928_2962409100021604550_n.jpg');
+background-position:left;
+background-repeat: no-repeat;
+background-position: 50% 20%;
+background-size: cover;
+}
+#Tokyo {background-image:url('/stylesheets/images/13658966_1773058129645078_6468224816592313805_n.jpg');
+background-position:left;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-position: 50% 0%;
+background-size: cover;}
+#Oslo {background-image:url('/stylesheets/images/14725653_1811745429109681_3711074100910771069_n.jpg');
+background-position:left;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-position: 50% -100%;
+background-size: cover;
 }
