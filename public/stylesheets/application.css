@@ -122,11 +122,11 @@ ul{
 
 
 #show1{
-  text-align: center;
-  margin: auto;
-  position: relative;
-  justify-content: center;
-  display: block;
+margin: auto;
+
+}
+img._53mz._4s0y{
+  display: inline-block;
 
 }
 h1 {
@@ -301,6 +301,7 @@ a{
   color: silver;
   text-align: center;
   font-size: 37px;
+
   border-radius: 15px;
   text-decoration: underline;
   font-weight: bolder;
@@ -521,9 +522,9 @@ footer{
 
 }
 button{
-  font-size: 22px;
+  font-size: 40px;
   background-color: rgb(0, 176, 41);
-  width: 200px;
+  width:200px;
   border-radius: 15px;
   animation: pulse 10s infinite;
   -webkit-text-stroke: 2px silver;
@@ -591,13 +592,14 @@ img{
 }
 
 #show1.hidden.newbuttons{
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    width: 600px;
+
+
+display: inline-block;
+
+    width: 1000px;
     position: relative;
     height:600px;
+
 }
 
 div.controls{
@@ -737,7 +739,7 @@ margin-top: 20px;
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #3e8e41;
     color: white;
     display: block;
     margin: 80px auto;
@@ -988,14 +990,16 @@ box-shadow: 5px 7px #999;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.err{
+  background-color: black;
+  display:list-item;
+}
 
 li{
   color: silver;
   font-size: 16px;
   background-color: black;
-  border-bottom: 4px solid green;
-  border-style:ridge;
-  border-radius: 18px;
+
 }
 
 /* Grey list item */

@@ -55,7 +55,7 @@ body {font-family: "Lato", sans-serif;}
 <button class="tablink" onclick="openCity('London', this, 'green')" id="defaultOpen">Guest Tour</button>
 <button class="tablink" onclick="openCity('Paris', this, 'green')">Sign In</button>
 <button class="tablink" onclick="openCity('Tokyo', this, 'green')">Sign Up</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'green')">Members Only </button>
+<button class="tablink" onclick="openCity('Oslo', this, 'green')">Members</button>
 <br>
 <br>
 
@@ -82,7 +82,10 @@ document.getElementById("defaultOpen").click();
 
 <body>
 
-
+<br>
+<br>
+<br>
+<br>
     <% if current_user %>
       <%= link_to( "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete) %>
     <% else %>

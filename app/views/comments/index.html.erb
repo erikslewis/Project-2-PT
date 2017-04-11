@@ -4,21 +4,25 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+
   <body>
 
-    <h1> <%= link_to "Get Back To Training", posts_path %> </h1>
-<h2>
-    <% @posts.each do |f| %>
+    <%= link_to "Get Back To Training", posts_path %>
 
-    <ul>
+
         <li>
-            <a href='/posts/<%=f.id%>'> <%= f.title%>
+          <% @posts.each do |f| %>
+            <a class="err" href='/posts/<%=f.id%>'> <%= f.title%>
 
         </li>
-    </ul>
+<br>
+<br>
+
+
 
     <% end %>
-</h2>
+
+
 
   </body>
 </html>
